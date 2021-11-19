@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-15 6:43:51 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.yr.entity">
+	<class name="User" table="aaa">
+
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+
+		<property name="birth" type="java.util.Date">
+			<column name="birth" sql-type="date" />
+		</property>
+
+		<property name="salary" type="java.lang.Double">
+			<column name="salary" sql-type="double(9,2)"></column>
+		</property>
+
+		<property name="headUrl" type="java.lang.String">
+			<column name="headUrl"></column>
+		</property>
+
+		<property name="sex" type="java.lang.Integer">
+			<column name="sex" />
+		</property>
+	</class>
+</hibernate-mapping>
